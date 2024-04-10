@@ -100,23 +100,24 @@ console.log('Name' == 'Name');
 
 //  const thisLogic = b > d && 57 == 57;
 //  console.log(`B is Greater than D & C is correct? ${thisLogic}`);
-  
- console.log(false || false || false || false || false || true);
+ 
+// console.log(false __ false __ false __ false __ false __ true);
+ console.log(false && false && false && false && false || true);
 
-
+//  console.log(false __ false)
 console.log(false == false) 
 
+// console.log(e ___ 'Kevin');
 console.log(e == 'Kevin');
 
-console.log(a < b + c); // note: a < b < c 
-// is NOT CORRECT (and is not a valid JS expression, think about using other math operations)
+// console.log(a __ b ___ c);// note: a < b < c is NOT CORRECT (and is not a valid JS expression, think about using other math operations)
+console.log(a < b + c); 
 
 
 console.log(a * a == d);
  // note: the answer is a simple arithmetic equation, not something "weird"
 
 console.log(48 == '48');
-
 
 // D. The farm
 // Declare a variable animal. Set it to be either "cow" or something else
@@ -152,14 +153,122 @@ if (properAge >= 16) {
     console.log('Sorry, You are too young');
 }
 
-// F. Biggie Smalls
+// F. Biggie Smalls ====== NEED TO FINSH F & G ==//
 // Create a variable that contains an integer.
-myInteger = (100)
 
 // Write an if ... else statement that:
+// console.log() "little number" if the number is entered is less than 100
+// console.log()  big number if the number is greater than or equal to 100.
+
+// myInteger = (100)
+let myInteger = 105;
 
 if (myInteger <= 100) {
-    console.log('little number');
+    console.log("little number");
 } else {
-    console.log(18);
+    console.log("Big Number");
 }
+
+// G. Monkey in the Middle
+// Write an if ... else if ... else statement:
+// console.log() "little number" if the number entered is less than 5.
+// If the number entered is more than 10, log "big number".
+// Otherwise, log "monkey".
+
+let myInteger2 = 55
+
+if (myInteger2 < 5) {
+console.log("Little number");
+} 
+else if (myInteger2 >= 10){
+console.log("Big Number");
+}
+else (myInteger2 || "Monkey");{
+
+}
+
+// II. Loops ===================//
+
+// Remember: USE let when you initialize your for loops!
+
+// This is GOOD: for(let i = 0; i < 100; i++)
+
+// This is NO GOOD: for(i = 0; i < 100; i++)
+
+//========= A. The basics====///
+// Write a loop that will print out all the numbers from 0 to 10, inclusive????
+
+for (let i = 0; i <= 10; i++) {
+    console.log(`Countdown is: ${i} `);
+}
+// Write a loop that will print out all the numbers from 10 up to and including 400
+let k= 10;
+
+for (let k= 10; k <=400; k++) {
+    console.log(`Countdown #number 2 is:' ${k}`);
+}
+
+// Write a loop that will print out every third number starting with 12 and going no higher than 4000 *** NEEDING HELP WITH THIS ******
+
+// let n= 12;
+
+for (let n= 12; n <4000; n++){
+   
+    console.log(n);
+
+    n+=2
+}
+
+//=======B. Get even =========//
+
+// Print out the numbers that are within the range of 1 - 100
+// Adjust your code to add a message next to even numbers only that says: "is an even number"
+
+for (let h = 1; h <= 100; h++) {
+    if (h % 2 === 0) {
+        console.log(` Is Even number : ${h}`);
+    }
+    // Output odd numbers from 1 to 100.
+    else if (h % 2 !== 0) {
+        console.log(`odd: ${h}`);
+    }
+}
+// C. Give me Five
+// For the numbers 0 - 100, print out "I found a <number>. High five!" if the number is a multiple of five Example Output:
+
+for (let t = 5; t <= 100; t ++) {
+    console.log(t);{
+        if (t % 5 ===0) {
+
+        console.log(`I Found a ${t}. High five !`);
+        }
+    }
+}
+
+// Add to the code from above to print out "I found a number. Three is a crowd" if the number is a multiple of three Example Output:
+
+// III. Arrays & Control flow
+
+// A. Talk about it in your group:
+// What are the things in an array called? 
+
+// Elements ====///
+
+// Do Arrays guarantee those things will be in order? 
+
+//Yes =======///
+
+// What real-life thing could you model with an array? 
+
+// Box of donuts 
+// Store book titles in a Library Management System
+// Arrange the leader-board of a game
+
+// Easy Does It
+
+// Create an array that contains three quotes and store it in a variable called quotes: 
+
+let quotes = ['Life is Good', 'Never give up', ' Better days are ahead'];
+
+
+console.log(quotes);
