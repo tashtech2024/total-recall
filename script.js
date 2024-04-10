@@ -268,7 +268,22 @@ for (let t = 5; t <= 100; t ++) {
 
 // Create an array that contains three quotes and store it in a variable called quotes: 
 
-let quotes = ['Life is Good', 'Never give up', ' Better days are ahead'];
-
+let quotes = ['Life is Good', 'Never give up','Better days area head'];
 
 console.log(quotes);
+
+// Accessing elements
+// Given the following array const randomThings = [1, 10, "Hello", true]
+// How do you access the 1st element in the array?
+
+let randonThings = ['1', '10', "Hello", "true"]; 
+
+    randonThings[0]="World";
+
+console.log(randonThings);
+}
+
+
+// Change the value of "Hello"to "World"
+
+// Check the value of the array to make sure it updated the array. How? Why, yes! console.log();
